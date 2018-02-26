@@ -23,6 +23,8 @@ function setup() {
     rm -Rf ${BUILD_DIR}/*
     # install build environment tools
     yum -y groupinstall "Development Tools"
+    #For Debian based systems
+    #sudo apt-get -y install curl wget build-essential libgd-dev libgeoip-dev checkinstall git
 }
 
 function download_sources() {
